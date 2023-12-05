@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style-faq.css">
+    <link rel="shortcut icon" href="../static/img/favicon.ico" rel="logo">
+    <title>Pythia - FAQ</title>
+</head>  
+<body>
+    <header>
+        <a href="./index.html">
+            <img src="../static/img/logo.png" id="logo">
+            <h1 id="titulo">Pythia</h1>
+        </a>
+
+        <nav id="links">
+            <ul>
+                <li><a href="./index.html">PÁGINA PRINCIPAL</a></li>
+                <li><a href="./programacion.html">NUESTROS CURSOS</a></li>
+                <li><a href="./newsletter.html">NEWSLETTER</a></li>
+                <li><a href="./faq.html" style="font-weight: bold;">FAQ</a></li>
+                <li><a href="./dev.html">INGRESO DEV</a></li>
+            </ul>
+        </nav>
+        
+
+    </header>
+
+    <div class="linea">
+    </div>
+
+    <main class="main">
+        <section>
+            <div class="main__img">
+                <img id="imagen-faq" src="../static/img/FAQ-ilustracion.png" alt="usuario consulta">
+            </div>
+            <div class="main__title">
+                <h1>PREGUNTAS FRECUENTES</h1>
+            </div>
+            <div>
+                <hr>
+                <h2 class="main__question">¿Por dónde empiezo?</h2>
+                <p class="main__question__answer">
+                    En Pythia vas a tener todos los recursos para convertirte en un desarrollador full stack. Por lo tanto es importante tener habilidades en tecnologias front-end como HTML, CSS y JavaScript. Te sugerimos comenzar por ese orden y luego enfocarte en las tecnologias back-end como bases de datos, servidores y lenguajes de programación, como Python, Ruby o Node.js. Además, es importante tener conocimientos sobre seguridad, control de versiones y gestión de proyectos.
+                </p>
+                <hr>
+                <h2 class="main__question">¿Qué es un desarrollador full stack?</h2>
+                <p class="main__question__answer">
+                    Un desarrollador full stack es un profesional de la tecnología que tiene la capacidad de trabajar tanto en el desarrollo del lado del cliente (front-end) como en el desarrollo del lado del servidor (back-end) de una aplicación web. Esto significa que puede crear aplicaciones web completas, desde la interfaz de usuario que los usuarios ven y utilizan, hasta la lógica que se ejecuta en el servidor.
+                </p>
+                <hr>
+                <h2 class="main__question">¿Cuál es la diferencia entre un desarrollador front-end y un desarrollador back-end?</h2>
+                <p class="main__question__answer">
+                    Un desarrollador front-end se enfoca en la creación de la interfaz de usuario de una aplicación web, es decir, lo que los usarios ven y con lo que interactúan en su navegador. Un desarrollador back-end se ocupa de la lógica de la aplicación, la gestión de datos y la documentación con el servidor.    
+                </p>
+                <hr>
+                <h2 class="main__question">¿Cuánto tiempo se necesita para convertirse en un desarrollador full stack?</h2>
+                <p class="main__question__answer">
+                    El tiempo necesario puede variar según la dedicación y la experiencia previa, pero generalmente lleva varios meses de aprendizake constante. Nuestros programas de formación te ayudaran a lograrlo en pocos meses gracias a nuestra calidad, profundidad y amplitud de contenido.
+                </p>
+                <hr>
+                <h2 class="main__question">¿Dónde puedo suscribirme al Newsletter?</h2>
+                <p class="main__question__answer">
+                    Dirigite al <a href="./newsletter.html">Newsletter</a> y completá el formulario al final de la página. Si tenés alguna consulta sobre este recurso, podés completar el <a href="./newsletter.html">formulario de consultas</a> (opción Newsletter).    
+                </p class="main__question__answer">
+                <hr>
+                <h2 class="main__question">¿Cuáles son las vías de comunicación?</h2>
+                <p class="main__question__answer">
+                    Podés comunicarte con nosotros a través de nuestras redes sociales con el nombre PYTHIA. También ofrecemos soporte técnico, administrativo o de pagos vía correo electrónico (cursos@pythia.com) y WhatsApp. Si deseás contactarnos vía web, te invitamos a completar el siguiente formulario...
+                </p>    
+        </div>
+        </section>
+        <section class="section__form">
+                <form action="#" method="post" class="legend" id="form-faq">
+                    <fieldset id="formulario">
+                        <legend>Dejanos tu consulta...</legend>
+                            <div class="divs">
+                                <label for="nombre" class="label">Nombre y apellido:</lab1el>
+                                <input type="text" id="nombre" name="nombre" class="section__form__input"><br>
+                            </div>
+                            <div class="error" id="error-nombre"></div>
+                            <div class="divs">    
+                                <label for="mail" class="label">Mail:</label>
+                                <input type="email" id="email" name="email" class="section__form__input"><br>
+                            </div>
+                            <div class="error" id="error-email"></div>
+                            <div class="divs">
+                                <label for="motivo" class="label">Motivo de la consulta:</label><br>
+                                <select name="motivo" id="motivo"><br>
+                                    <option disabled selected=""></option>
+                                    <option value="2">Contenido</option>
+                                    <option value="3">Tutorias</option>
+                                    <option value="4">Temario orientador</option>
+                                    <option value="5">Newsletter</option>
+                                    <option value="6">Otro</option>
+                                </select>
+                            </div>
+                            <div class="error" id="error-motivo"></div>
+                            <br><br>
+                            <div class="divs">
+                                <textarea id="consulta" name="consulta" rows="5" placeholder="Escriba su consulta aquí..." class="label"></textarea><br><br>
+                            </div>
+                            <div class="error" id="error-consulta"></div>
+                            <script src="../static/js/faq-validation.js"></script>
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Borrar</button>
+                </fieldset>
+                
+                </form>
+            </section>
+    </main>
+
+    <div class="linea">
+    </div>
+    
+    <footer>
+        <a href="./index.html" id="indexfooter">
+            <img src="../static/img/logo.png" id="logofooter">
+            <h1 id="titulo">Pythia</h1>
+        </a>
+        <div id="redes">
+            <a class="red"><img src="../static/img/youtube.png"></a>
+            <a class="red"><img src="../static/img/facebook.png"></a>
+            <a class="red"><img src="../static/img/insta.png"></a>
+            <a class="red"><img src="../static/img/x.png"></a>
+        </div>
+        
+        <p>Todos los derechos reservados 2023</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,691 @@
+:root {
+    --header-color:#0d5d56; /*#0d5d56*/
+    --presentacion-color:#c994cd;/*#8fd5a6*/
+    --footer-color::#0d5d56;
+    --body-color:#c994cd;
+    --linea-color:#112631;
+    --contenido-color:#1126318b;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #11263178;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url('./segoe-ui-4-cufonfonts/Segoe\ UI.ttf');
+    src: url('./segoe-ui-4-cufonfonts/Segoe\ UI.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Segoe UI Bold";
+    src: url('./segoe-ui-4-cufonfonts/Segoe\ UI\ Bold.ttf');
+    src: url('./segoe-ui-4-cufonfonts/Segoe\ UI\ Bold.ttf') format('truetype');
+}
+
+html {
+    margin:0%;
+    padding:0%;
+}
+
+body {
+    margin:0%;
+    padding:0%;
+    background-color: var(--body-color);
+    font-family: "Segoe UI", "PT Sans", Calibri, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color:var(--header-color); 
+    height: 60px;
+}
+
+#logo {
+    height:100%;
+}
+
+header * {
+    display:inline;
+    vertical-align: middle;
+    color:black;
+}
+
+
+#links {
+    position:absolute;
+    right:0px;
+    top:2%;
+}
+
+#links a {
+    margin-right:50px;
+
+}
+
+#linea {
+    background-color: var(--linea-color);
+    height: 8px;
+}
+
+#presentacion {
+    background-color: var(--presentacion-color);
+    height: 35.2rem;
+} 
+
+#presentacion::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style for the left div */
+#cursos {
+    width: 20%;
+    height: 36.9rem;
+    float: left;
+    background-color: #0d5d56ba;
+    text-align: center;
+}
+
+#cursos a {
+    color:black;
+}
+
+#cursos a:hover {
+    color:black;
+    font-weight: bold;
+}
+
+
+#cursos ul {
+    margin:0px;
+    padding: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#cursos ul li {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+/* Style for the right div */
+#principio {
+    width: 80%;
+    float: left;
+    height: 20rem;
+}
+
+
+hr {
+    height: 0.3rem;
+    background-color: var(--linea-color);
+    border: none;
+    width: 80%;
+    margin-top: 2%;
+}
+
+#contenido {
+    background-color: var(--contenido-color);
+    width: 40
+}
+
+#contenido div {
+    display:block;
+    text-align: center;
+}
+
+#contenido div h1 {
+    float: left;
+    margin-top:2%;
+    margin-left:10%;
+}
+
+#contenido div iframe {
+    display:block;
+    justify-content: center;
+    margin-left: 35%;
+    margin-right: 5%;
+    margin-top:2%;
+}
+
+#contenido div:last-child {
+    padding-bottom: 2%;
+}
+
+#principio h1 {
+    display:inline;
+    font-size: 4rem;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+#principio img {
+    height: 14rem;
+    margin-right: 0px;
+}
+
+#linea2 {
+    background-color: #295b76;
+    height: 5%;
+    width: 30%;
+    margin-top: 5%;
+    margin-left: 10%;
+    border-radius: 15px 50px;
+}
+
+#principio p {
+    background-color: #295b76;
+    height: 10rem;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 0px;
+    border-radius: 15px 50px;
+    text-align: center;
+    font-size: 1.3rem;
+    text-indent: 5%;
+    padding-top: 5%;
+}
+
+footer a * {
+    display:inline;
+    vertical-align: middle;
+    color:black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.red img {
+    height: 50px;
+}
+
+#redes {
+    float:right;
+    margin-top:2%;
+    margin-right:2%;
+}
+
+footer p {
+    display:block;
+    text-align: center;
+    margin:0px;
+    padding-bottom:2%;
+}
+
+footer {
+    background-color: var(--header-color);
+    height:200px;
+    width:100%;
+}
+
+#logofooter {
+    height:50%;
+}
+
+.error {
+    font-style: italic;
+    color: red;
+}
+
+/*---------------------- media queries -------------------------*/
+
+@media screen and (max-width: 767px) {
+
+    header {
+        background-color:var(--header-color); 
+        height: 50px;
+    }
+    
+    #logo {
+        height:60%;
+    }
+    
+    header * {
+        display:inline;
+        vertical-align: middle;
+        color:black;
+    }
+    
+    #links {
+        align-items: center;
+        align-content: space-around;
+        bottom:2%;
+        right: 20px;
+    }
+    
+    #links a {
+        margin-right:0px;
+        font-size: 0.7em;
+    }
+    
+    #linea {
+        background-color: var(--linea-color);
+        height: 8px;
+    }
+    
+    #presentacion {
+        background-color: var(--presentacion-color);
+        height: 17.0rem;
+    } 
+    
+    #presentacion::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    /* Style for the left div */
+    #cursos {
+        width: 10%;
+        height: 18rem;
+        float: left;
+        background-color: #0d5d56ba;
+        text-align: center;
+    }
+    
+    #cursos a {
+        color:black;
+    }
+    
+    #cursos a:hover {
+        color:black;
+        font-weight: bold;
+    }
+    
+    
+    #cursos ul {
+        margin:0px;
+        padding: 0px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    #cursos ul li {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        font-size: 1.0rem;
+    }
+    
+    /* Style for the right div */
+    #principio {
+        width: 80%;
+        float: left;
+        height: 10rem;
+    }
+    
+    
+    hr {
+        margin-left: 7rem;
+        height: 0.3rem;
+        background-color: var(--linea-color);
+        border: none;
+        width: 30%;
+        margin-top: 2.1%;
+    }
+    
+    #contenido {
+        background-color: var(--contenido-color);
+    }
+    
+    #contenido div {
+        display:block;
+        text-align: center;
+    }
+    
+    #contenido div h1 {
+        font-size: 1rem;
+        float: left;
+        margin-top: 3%;
+        margin-left: 2%;
+    }
+    
+    #contenido div iframe {
+        height: 50%;
+        width: 30%;
+        display:block;
+        justify-content: center;
+        margin-left: 15%;
+        margin-right: 5%;
+        margin-top:2%;
+    }
+    
+    #contenido div:last-child {
+        padding-bottom: 5%;
+    }
+    
+    #principio h1 {
+        display:inline;
+        font-size: 1.4rem;
+        margin-left: 4%;
+        margin-right: 0%;
+    }
+    
+    #principio img {
+        height: 4rem;
+        margin-left: 0px;
+    }
+    
+    #linea2 {
+        background-color: #295b76;
+        height: 5%;
+        width: 40%;
+        margin-top: 2%;
+        margin-left: 2%;
+        border-radius: 15px 50px;
+    }
+    
+    #principio p {
+        background-color: #295b76;
+        height: 10rem;
+        width: 43%;
+        margin-top: 2%;
+        margin-left: 1%;
+        margin-right: 0px;
+        border-radius: 15px 50px;
+        text-align: justify;
+        font-size: 0.8rem;
+        text-indent: 5%;
+        padding: 2%;
+    }
+    
+    footer a * {
+        vertical-align: middle;
+        color:black;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .red img {
+        height: 2rem;
+    }
+    
+    #redes {
+        float: right;
+        margin-top: 2%;
+        margin-right: 2%;
+    }
+    
+    footer p {
+        display:block;
+        text-align: center;
+        margin:0px;
+        padding-bottom:2%;
+        font-size: 0.8rem;
+    }
+    
+    footer {
+        background-color: var(--header-color);
+        height:6rem;
+        width:100%;
+    }
+    
+    #indexfooter > #titulo {
+        font-size: 2rem;
+    }
+    
+    #logofooter {
+        height:40%;
+    }
+    
+    .error {
+        font-style: italic;
+        color: red;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    header {
+        background-color:var(--header-color); 
+        height: 50px;
+    }
+    
+    #logo {
+        height:60%;
+    }
+    
+    header * {
+        display:inline;
+        vertical-align: middle;
+        color:black;
+    }
+    
+    #links {
+        align-items: center;
+        align-content: space-around;
+        bottom:2%;
+        right: 20px;
+    }
+    
+    #links a {
+        margin-right:0px;
+        font-size: 0.7em;
+    }
+    
+    #linea {
+        background-color: var(--linea-color);
+        height: 8px;
+    }
+    
+    #presentacion {
+        background-color: var(--presentacion-color);
+        height: 564px;
+    } 
+    
+    #presentacion::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    /* Style for the left div */
+    #cursos {
+        width: 20%;
+        height: 590px;
+        float: left;
+        background-color: #0d5d56ba;
+        text-align: center;
+    }
+    
+    #cursos a {
+        color:black;
+    }
+    
+    #cursos a:hover {
+        color:black;
+        font-weight: bold;
+    }
+    
+    
+    #cursos ul {
+        margin:0px;
+        padding: 0px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    #cursos ul li {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        font-size: 190%;
+    }
+    
+    /* Style for the right div */
+    #principio {
+        width: 80%;
+        float: left;
+        height: 590px;
+    }
+    
+    /*
+    #presentacion {
+        display:flex;
+        height: 500px;
+        background-color:var(--presentacion-color);
+        padding:0px;
+    }
+    
+    
+    #cursos * {
+        display:block;
+    }
+    
+    #principio {
+        background-color: #0d5d56;
+    
+    }*/
+    
+    hr {
+        height: 4px;
+        background-color: var(--linea-color);
+        border: none;
+        width: 10%;
+        margin-top: 2%;
+    }
+    
+    #contenido {
+        background-color: var(--contenido-color);
+    }
+    
+    #contenido div {
+        display:block;
+        text-align: center;
+    }
+    
+    #contenido div h1 {
+        float: left;
+        margin-top:2%;
+        margin-left:10%;
+    }
+    
+    #contenido div iframe {
+        display:block;
+        justify-content: center;
+        margin-left: 35%;
+        margin-right: 5%;
+        margin-top:2%;
+    }
+    
+    #contenido div:last-child {
+        padding-bottom: 2%;
+    }
+    
+    #principio h1 {
+        display:inline;
+        font-size: 70px;
+        margin-left: 15%;
+        margin-right: 5%;
+    }
+    
+    #principio img {
+        height: 200px;
+        margin-right: 0px;
+    }
+    
+    #linea2 {
+        background-color: #295b76;
+        height: 5%;
+        width: 80%;
+        margin-top: 5%;
+        margin-left: 10%;
+        border-radius: 15px 50px;
+    }
+    
+    #principio p {
+        background-color: #295b76;
+        height: 150px;
+        width: 80%;
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 0px;
+        border-radius: 15px 50px;
+        text-align: center;
+        font-size: 130%;
+        text-indent: 5%;
+        padding-top: 5%;
+    }
+    
+    footer a * {
+        display:inline;
+        vertical-align: middle;
+        color:black;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .red img {
+        height: 2rem;
+    }
+    
+    #redes {
+        float:right;
+        margin-top:2%;
+        margin-right:2%;
+    }
+    
+    footer p {
+        display:block;
+        text-align: center;
+        margin:0px;
+        padding-bottom:2%;
+        font-size: 0.8rem;
+    }
+    
+    footer {
+        background-color: var(--header-color);
+        height:6rem;
+        width:100%;
+    }
+    
+    #indexfooter > #titulo {
+        font-size: 2rem;
+    }
+    
+    #logofooter {
+        height:40%;
+    }
+    
+    .error {
+        font-style: italic;
+        color: red;
+    }
+
+}
